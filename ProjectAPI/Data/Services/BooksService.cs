@@ -15,7 +15,7 @@ namespace ProjectAPI.Data.Services
             _context = context;
         }
 
-        public void AddBook(BookVM book)
+        public void AddBookWithAuthors(BookVM book)
         {
             var _book = new Book()
             {
@@ -25,8 +25,9 @@ namespace ProjectAPI.Data.Services
                 Genre = book.Genre,
                 DateRead = book.IsRead ? book.DateRead.Value : null,
                 Rate = book.IsRead ? book.Rate.Value : null,
-                Author = book.Author,
-                DateAdded = DateTime.Now
+                DateAdded = DateTime.Now,
+                PublisherId = book.PublisherId,
+                AuthorId = book.AuthorId
             };
             _context.Books.Add(_book);
             _context.SaveChanges();
@@ -55,7 +56,6 @@ namespace ProjectAPI.Data.Services
                 _book.IsRead = book.IsRead;
                 _book.DateRead = book.IsRead ? book.DateRead.Value : null;
                 _book.Rate = book.IsRead ? book.Rate.Value : null;
-                _book.Author = book.Author;
 
                 _context.SaveChanges();
             }

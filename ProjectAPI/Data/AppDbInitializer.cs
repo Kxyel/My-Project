@@ -26,7 +26,6 @@ namespace ProjectAPI.Data
                         DateRead = DateTime.Now.AddDays(-10),
                         Rate = 10,
                         Genre = "Terror",
-                        Author = "H.P Lovecraft",
                         DateAdded = DateTime.Now
                     },
                     new Book()
@@ -35,7 +34,6 @@ namespace ProjectAPI.Data
                         Description = "Compilado de contos de terror",
                         IsRead = false,
                         Genre = "Terror",
-                        Author = "H.P Lovecraft",
                         DateAdded = DateTime.Now
                     });
                     context.SaveChanges();

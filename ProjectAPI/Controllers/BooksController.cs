@@ -19,10 +19,10 @@ namespace ProjectAPI.Controllers
         {
             _booksService = booksService;
         }
-        [HttpPost("add-book")]
+        [HttpPost("add-book-with-authors")]
         public IActionResult AddBook([FromBody]BookVM book)
         {
-            _booksService.AddBook(book);
+            _booksService.AddBookWithAuthors(book);
             return Ok();
         }
 

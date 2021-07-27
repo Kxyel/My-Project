@@ -59,3 +59,5 @@ C:\Users\xsysc\source\repos\ProjectAPI\ProjectAPI\obj\Debug\net5.0\ProjectAPI.dl
 C:\Users\xsysc\source\repos\ProjectAPI\ProjectAPI\obj\Debug\net5.0\ref\ProjectAPI.dll
 C:\Users\xsysc\source\repos\ProjectAPI\ProjectAPI\obj\Debug\net5.0\ProjectAPI.pdb
 C:\Users\xsysc\source\repos\ProjectAPI\ProjectAPI\obj\Debug\net5.0\ProjectAPI.genruntimeconfig.cache
+C:\Users\xsysc\source\repos\ProjectAPI\ProjectAPI\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\xsysc\source\repos\ProjectAPI\ProjectAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll

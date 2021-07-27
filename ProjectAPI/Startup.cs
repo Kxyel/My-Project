@@ -38,6 +38,10 @@ namespace ProjectAPI
 
             services.AddTransient<BooksService>();
 
+            services.AddTransient<AuthorsService>();
+
+            services.AddTransient<PublishersService>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ProjectAPI", Version = "v1" });
@@ -65,7 +69,7 @@ namespace ProjectAPI
                 endpoints.MapControllers();
             });
 
-            AppDbInitializer.Seed(app);
+            //AppDbInitializer.Seed(app);
         }
     }
 }

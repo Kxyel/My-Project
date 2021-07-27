@@ -12,7 +12,8 @@ namespace ProjectAPI.Data.Models.ViewModels
         public bool IsRead { get; set; }
         public string Genre { get; set; }
         public DateTime? DateRead { get; set; }
-        public string Author { get; set; }
         public int? Rate { get; set; }
+        public int PublisherId { get; set; }
+        public int AuthorId { get; set; }
     }
 }
